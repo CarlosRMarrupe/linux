@@ -6,11 +6,10 @@
 engine=docker                                                           ;
 repo=https://download.docker.com/linux/centos/docker-ce.repo		;
 #########################################################################
-sudo yum update -y                                               ;
+sudo yum update -y                                                      ;
 sudo yum install -y yum-utils device-mapper-persistent-data lvm2	;
-sudo yum-config-manager --add-repo ${repo}                       ;
+sudo yum-config-manager --add-repo ${repo}                              ;
 #########################################################################
-
 for package in                                                          \
         ${engine}-ce                                                    \
                                                                         ;
@@ -25,6 +24,6 @@ do                                                                      \
         done                                                            ;
 done                                                                    ;
 #########################################################################
-sudo systemctl restart ${engine}		                              			;
-sudo systemctl enable --now ${engine}	                                  ;
+sudo systemctl restart ${engine}                 			;
+sudo systemctl enable --now ${engine}	                                ;
 #########################################################################
