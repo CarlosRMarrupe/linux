@@ -1,7 +1,7 @@
 #!/bin/bash
 #########################################################################
 # Carlos Ramírez - 22/02/2021
-# Install docker-ce and docker-compose on CentOS / RHEL
+# Install docker-ce on CentOS / RHEL
 #########################################################################
 engine=docker                                                           ;
 repo=https://download.docker.com/linux/centos/docker-ce.repo		;
