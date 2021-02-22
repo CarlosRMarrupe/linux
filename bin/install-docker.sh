@@ -25,5 +25,5 @@ do                                                                      \
 done                                                                    ;
 #########################################################################
 sudo systemctl restart ${engine}                 			;
-sudo systemctl enable --now ${engine}	                                ;
+sudo systemctl enable  ${engine}  	                                ;
 #########################################################################
